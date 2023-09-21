@@ -1,6 +1,6 @@
 const hre = require("hardhat");
 
-const contractAddress = "0xc01c843d73aaDbBF4c3906238dF35c6BDf3f2cd9";
+const contractAddress = process.env.CONTRACT_ADDRESS;
 
 async function sleep(ms) {
   return new Promise((resolver) => setTimeout(resolver, ms));
